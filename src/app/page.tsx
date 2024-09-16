@@ -1,14 +1,19 @@
 'use client'
 
 import Footer from "@/components/reusables/Footer";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import Section1 from "@/components/reusables/home/section-1";
+import Section2 from "@/components/reusables/home/section-2";
+import Section3 from "@/components/reusables/home/section-3";
+
 
 export default function Home() {
   
   return (
-      <ScrollArea className="w-full h-[calc(100vh -98px)]">
-        <Footer />
-      </ScrollArea>
-     
+      <div className="p-10">
+          <Section1 />
+          <Section2 />
+          <Section3 />
+         <Footer />
+      </div>
   );
 }
