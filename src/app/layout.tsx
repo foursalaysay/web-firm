@@ -1,8 +1,11 @@
+
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/reusables/Navbar";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import ResNavbar from "@/components/reusables/Responsive-Navbar";
+
 
 
 const geistSans = localFont({
@@ -26,6 +29,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+ 
   return (
     <html lang="en">
       <body
@@ -39,7 +44,7 @@ export default function RootLayout({
         </div> */}
 
         <div className="fixed bg-[url('/bg-home.png')] w-screen h-screen bg-cover bg-center top-0 left-0">
-          <Navbar />
+          <ResNavbar />
           <div className="absolute inset-0 top-[94px] overflow-y-auto">
             <ScrollArea className="h-full w-full">
               {children}

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <div className='w-full h-[94px] bg-transparent flex justify-between px-32 mt-10'>
+    <div className='w-full h-[200px] lg:h-[94px] bg-transparent flex flex-col lg:flex-row items-center justify-center lg:justify-between px-5 lg:px-32 mt-10 gap-3 lg:gap-0 '>
         {/* EMPTY */}
         <div>Logo</div>
 
